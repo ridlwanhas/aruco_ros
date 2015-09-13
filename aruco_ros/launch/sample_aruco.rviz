@@ -64,7 +64,7 @@ Visualization Manager:
       Axes Radius: 0.1
       Class: rviz/Pose
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.3
       Head Radius: 0.1
       Name: Pose
@@ -72,7 +72,7 @@ Visualization Manager:
       Shaft Radius: 0.05
       Shape: Arrow
       Topic: /aruco_single/pose
-      Value: true
+      Value: false
     - Class: rviz/Image
       Enabled: true
       Image Topic: /aruco_single/result
@@ -83,6 +83,26 @@ Visualization Manager:
       Normalize Range: true
       Queue Size: 2
       Transport Hint: raw
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        aruco_marker_frame:
+          Value: true
+        usb_cam:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        usb_cam:
+          aruco_marker_frame:
+            {}
+      Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
@@ -108,7 +128,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 10
+      Distance: 2.36051
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -120,10 +140,10 @@ Visualization Manager:
         Z: 0
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.785398
+      Pitch: 0.405398
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.785398
+      Yaw: 5.69858
     Saved: ~
 Window Geometry:
   Displays:
@@ -144,4 +164,4 @@ Window Geometry:
     collapsed: false
   Width: 1200
   X: 55
-  Y: 50
+  Y: 40
